@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cultural Department of India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script > 
+        
+function scrollDown() {
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+}
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Message submitted successfully!");
+    this.reset();
+});
+
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="logo">🇮🇳 Cultural India</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#heritage">Heritage</a>
+        <a href="#schemes">Schemes</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Celebrating India’s Living Culture</h1>
+        <p>Art • Heritage • Traditions • Unity</p>
+        <button id="db"> <a href="dpculture.html" > Discover More  </a> </button>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+        India’s culture is one of the oldest and richest in the world.  
+        The Cultural Department works to preserve, promote, and celebrate
+        our heritage through art, architecture, literature, and traditions.
+    </p>
+</section>
+
+<section id="heritage" class="section alt">
+    <h2>Cultural Heritage</h2>
+    <div class="card-container">
+        <div class="card">🕌 Historical Monuments</div>
+        <div class="card">💃 Classical & Folk Dance</div>
+        <div class="card">🎶 Music & Instruments</div>
+        <div class="card">📜 Ancient Manuscripts</div>
+    </div>
+</section>
+
+<section id="schemes" class="section">
+    <h2>Government Initiatives</h2>
+    <ul class="scheme-list">
+        <li>National Mission on Cultural Mapping</li>
+        <li>Financial Assistance for Cultural Activities</li>
+        <li>Scheme for Safeguarding Intangible Heritage</li>
+    </ul>
+</section>
+
+<section id="events" class="section alt">
+    <h2>Upcoming Events</h2>
+    <div class="events">
+        <div class="event-box">
+            <h3>National Folk Festival</h3>
+            <span>15 August</span>
+        </div>
+        <div class="event-box">
+            <h3>Classical Dance Workshop</h3>
+            <span>5 September</span>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© Cultural Department of India | College Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

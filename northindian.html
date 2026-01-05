@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>North India States</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #ff9933;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .states-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .state-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .state-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .state-card h3 {
+            padding: 10px;
+            color: #333;
+        }
+
+        
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        /* ---------- GLOBAL POLISH ---------- */
+body {
+    background: linear-gradient(180deg, #f6f6f6, #e9e9e9);
+}
+
+/* Header enhancement */
+header {
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* ---------- GRID ---------- */
+.states-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- CARD UPGRADE ---------- */
+.state-card {
+    position: relative;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Hover lift */
+.state-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+}
+
+/* ---------- IMAGE EFFECT ---------- */
+.state-card img {
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.state-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+/* ---------- TEXT ---------- */
+.state-card h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #ff6f00;
+    margin: 12px 0 6px;
+}
+
+.state-card p {
+    padding: 0 18px 20px;
+    font-size: 14.8px;
+    line-height: 1.7;
+    color: #444;
+    text-align: justify;
+}
+
+/* ---------- ACCENT STRIP ---------- */
+.state-card::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #ff9933, #ff5722);
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s ease;
+}
+
+.state-card:hover::before {
+    width: 100%;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #111, #333);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    header {
+        font-size: 24px;
+        padding: 15px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    States of North India
+</header>
+
+<div class="states-container">
+
+    <div class="state-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNj0fjUrDG4iju6G99BhpFmmFgDQhfnnm5Bw&s" alt="Punjab">
+        <h3>Punjab</h3>
+        <p>Punjab's culture is vibrant and welcoming, known for its rich agricultural heritage, strong traditions in music (like energetic Bhangra), dance (Gidda), colorful textiles (Phulkari), hearty cuisine, and a deep sense of community, heavily influenced by Sikhism and a history of resilience, reflected in its spirited people and festive spirit.</p>
+    </div>
+
+    <div class="state-card">
+        <img src="https://www.holidify.com/images/cmsuploads/articles/238.jpg" alt="Haryana">
+        <h3>Haryana</h3>
+        <p>Haryana's culture is a vibrant blend of ancient Vedic traditions and agrarian life, known for its energetic folk dances (like Ghoomar & Khoria), colorful festivals (Teej, Baisakhi), and deep respect for elders, all expressed through rich folklore, traditional attire (Daaman & Kurti), and hearty cuisine, emphasizing hospitality and community.</p>
+    </div>
+
+    <div class="state-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiickt2kBaVwduqa9OV-J1UXWMuABZ5U5NTo7aaI6wMA&s=10" alt="Uttar Pradesh">
+        <h3>Uttar Pradesh</h3>
+        <p>Uttar Pradesh culture is a rich tapestry of ancient history, spirituality (birthplace of Ramayana/Krishna), and vibrant traditions, known for its Ganga-Jamuni tehzeeb (etiquette), exquisite crafts like Lucknowi Chikankari and Banarasi silk, classical dance (Kathak), and festivals that blend Hindu and Muslim heritage, showcasing a blend of Mughal grandeur and rustic folk art.</p>
+    </div>
+
+    <div class="state-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVSKnpgm11MRldmFNhfwC2J_HvhHZrxxMdxxALFDhRGBaTPbDmQhc9jQ&s=10" alt="Himachal Pradesh">
+        <h3>Himachal Pradesh</h3>
+        <p>Himachal Pradesh culture is a vibrant mix of Hindu and Buddhist traditions, known for its unique folk music, colorful festivals like Kullu Dussehra, intricate handicrafts (shawls, woodcarving), and distinct lifestyles shaped by diverse communities and mountain life, preserving ancient customs and rituals in its Himalayan valleys./p>
+    </div>
+
+    <div class="state-card">
+        <img src="https://www.namasteindiatrip.org/wp-content/uploads/2018/10/Folk-Dance-of-Uttarakhand.jpg" alt="Uttarakhand">
+        <h3>Uttarakhand</h3>
+        <p>Uttarakhand's culture is a vibrant blend of Himalayan traditions, deeply rooted in nature and spirituality, famous for distinct Garhwali and Kumaoni customs, rich folk music and dances (like Chholiya & Pandav Nritya), vibrant festivals (Harela, Phool Dei), intricate handicrafts (wood carving, Aipan art), and reverence for nature, earning it the name "Devbhoomi" (Land of Gods) due to numerous holy sites.</p>
+    </div>
+
+    <div class="state-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGR9Cw8ezQlULxXcgV4WS9N7wan2PIb1R6XrDFJzxwgNOxL2ogb81cZeU&s=10" alt="Jammu & Kashmir">
+        <h3>Jammu & Kashmir</h3>
+        <p>Jammu & Kashmir's culture is a rich blend of Persian, Central Asian, and Indian influences, known for its exquisite handicrafts like Pashmina shawls, intricate woodwork, and vibrant festivals, alongside unique traditions in music, dance (like Rouf), cuisine (Wazwan), and spiritual diversity reflected in its ancient Buddhist, Hindu, and Islamic heritage. The unifying spirit of "Kashmiriyat" highlights mutual respect and shared cultural values among its diverse people.</p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 | North India Cultural Showcase
+</footer>
+
+</body>
+</html>

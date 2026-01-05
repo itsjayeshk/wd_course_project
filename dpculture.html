@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Indian Culture & Diversity</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(to right, #f48415, #ffffff, #1f9813);
+            padding: 20px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .culture-card {
+            display: flex;
+            background-color: white;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .culture-card img {
+            width: 40%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .culture-content {
+            padding: 20px;
+            width: 60%;
+        }
+
+        .culture-content h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .culture-content p {
+            text-align: justify;
+            color: #555;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #nic a{
+            text-decoration: none;
+            color: #222;
+        }
+
+        #sic a{
+            text-decoration: none;
+            color: #222;
+        }
+
+        #eic a{
+            text-decoration: none;
+            color: #222;
+        }
+
+        #wic a{
+            text-decoration: none;
+            color: #222;
+        }
+        /* ---------- GLOBAL POLISH ---------- */
+body {
+    background: linear-gradient(180deg, #f9f9f9, #ececec);
+}
+
+/* Header glow + spacing */
+header {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- CULTURE CARD UPGRADE ---------- */
+.culture-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border-left: 6px solid transparent;
+}
+
+/* Hover animation */
+.culture-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border-left: 6px solid #f48415;
+}
+
+/* Image effects */
+.culture-card img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.culture-card:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.1);
+}
+
+/* ---------- CONTENT ---------- */
+.culture-content {
+    position: relative;
+}
+
+/* Heading styling */
+.culture-content h2 {
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+/* Underline animation */
+.culture-content h2::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #f48415;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.4s ease;
+}
+
+.culture-card:hover h2::after {
+    width: 80px;
+}
+
+/* Paragraph refinement */
+.culture-content p {
+    line-height: 1.7;
+    font-size: 15.5px;
+}
+
+/* ---------- LINKS ---------- */
+#nic a, #sic a, #eic a, #wic a {
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+#nic a:hover, 
+#sic a:hover, 
+#eic a:hover, 
+#wic a:hover {
+    color: #f48415;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    letter-spacing: 1px;
+    font-size: 14px;
+    background: linear-gradient(90deg, #111, #333);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+    .culture-card {
+        flex-direction: column;
+    }
+
+    .culture-card img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .culture-content {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    Cultural Diversity of India
+</header>
+
+<div class="container">
+
+    <!-- North India -->
+    <div class="culture-card">
+        <img src="https://www.rajputholidays.com/wp-content/uploads/North-India-to-experience-culture-and-heritage-1320x600.jpg" alt="North Indian Culture">
+        <div class="culture-content">
+            <h2 id="nic"> <a href="northindian.html" > North Indian Culture </a> </h2>
+            <p class="">
+                North India is known for its rich traditions, festivals, and historical monuments.
+                Popular dances include Bhangra and Kathak. Traditional food like butter chicken,
+                naan, and chole bhature are widely loved. Festivals such as Diwali, Holi, and Lohri
+                are celebrated with great enthusiasm.
+            </p>
+        </div>
+    </div>
+
+    <!-- South India -->
+    <div class="culture-card">
+        <img src="https://www.southindiatempletours.com/images/tour-img.jpg" alt="South Indian Culture">
+        <div class="culture-content">
+            <h2 id="sic"> <a href="southindian.html"> South Indian Culture </a> </h2>
+            <p>
+                South India is famous for its classical dances like Bharatanatyam and Kuchipudi.
+                Temples reflect ancient architecture and traditions. Rice-based dishes such as
+                dosa, idli, and sambhar are staple foods. Festivals like Pongal and Onam highlight
+                the cultural richness of the region.
+            </p>
+        </div>
+    </div>
+
+    <!-- East India -->
+    <div class="culture-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb450pdoCcl2RNGEKpjm1P7AVSK62R1T8jdg&s" alt="East Indian Culture">
+        <div class="culture-content">
+            <h2 id="eic"> <a href="eastindian.html"> East Indian Culture </a> </h2>
+            <p>
+                East India is known for its literature, art, and spiritual heritage.
+                Odissi dance and folk music play an important role in the culture.
+                Durga Puja is one of the grandest festivals celebrated in this region.
+            </p>
+        </div>
+    </div>
+
+    <!-- West India -->
+    <div class="culture-card">
+        <img src="https://pbs.twimg.com/media/DpmqDVSXoAAtHp-.jpg" alt="West Indian Culture">
+        <div class="culture-content">
+            <h2 id="wic"> <a href="westindian.html"> West Indian Culture </a> </h2>
+            <p>
+                West India represents a vibrant mix of traditions and modern lifestyle.
+                Garba and Dandiya dances are popular in Gujarat, while Maharashtra is
+                known for Ganesh Chaturthi. Traditional attire and cuisines reflect diversity.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 | Incredible India – Unity in Diversity
+</footer>
+
+</body>
+</html>

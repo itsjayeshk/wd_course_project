@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>East India States</title>
+    <style>
+        body { font-family: Arial; background: #f4f4f4; margin: 0; }
+        header { background: #1a237e; color: white; padding: 20px; text-align: center; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 { padding: 10px; }
+        /* ---------- GLOBAL UPGRADE ---------- */
+body {
+    background: linear-gradient(180deg, #f5f7fa, #e4e7eb);
+}
+
+/* Header enhancement */
+header {
+    letter-spacing: 2px;
+    font-size: 34px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* ---------- GRID ---------- */
+.grid {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- CARD UPGRADE ---------- */
+.card {
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    position: relative;
+}
+
+/* Lift + shadow on hover */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+}
+
+/* ---------- IMAGE EFFECT ---------- */
+.card img {
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+/* ---------- TEXT ---------- */
+.card h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 12px 0 5px;
+    color: #1a237e;
+}
+
+.card p {
+    padding: 0 18px 20px;
+    font-size: 14.8px;
+    line-height: 1.7;
+    color: #444;
+    text-align: justify;
+}
+
+/* ---------- ACCENT BAR ---------- */
+.card::before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 0;
+    background: #ff9800;
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s ease;
+}
+
+.card:hover::before {
+    width: 100%;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    header {
+        font-size: 26px;
+        padding: 15px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+<header>States of East India</header>
+
+<div class="grid">
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT66nxapagDPMY59oi9rJ_Bxm41oAojbQFvJQ&s">
+        <h3>West Bengal</h3>
+        <p>West Bengal culture is a rich blend of artistic, literary, and spiritual traditions, famous for its vibrant festivals like Durga Puja, renowned literature (Tagore), cinema (Satyajit Ray), folk music (Baul, Jatra), and exquisite handicrafts, showcasing a unique Bengali identity rooted in creativity and intellectualism.</p>    
+    </div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevN7qpIR_l015mN2asGDFAfNAMHeeN2WbUQ&s">
+        <h3>Odisha</h3>
+        <p>Odisha's culture is a vibrant mix of ancient traditions, spiritual devotion (especially to Lord Jagannath), and artistic expression, seen in its intricate temples (Konark, Lingaraj), classical Odissi dance, Pattachitra paintings, and numerous festivals like Ratha Yatra, blending Aryan, Dravidian, and tribal influences.</p>
+    </div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVMPZpFgHgFs8oxqtpPXuT5q5JbfMiE8MuWg&s">
+        <h3>Bihar</h3>
+         <p> Bihar's culture is a vibrant mix of ancient history, spirituality (Buddhism, Jainism), and folk traditions, known for distinct art like Madhubani painting, unique cuisine (Litti Chokha), famous festivals (Chhath Puja), and rich literature, reflecting simple living and communal harmony.</p>     
+    </div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_OWt3oPtg_LUgnD0NAFSLgNONiX4puyzJaQ&s">
+        <h3>Jharkhand</h3>
+        <p> Jharkhand's culture is a vibrant blend of diverse tribal traditions (Santhal, Munda, Oraon) and local influences, celebrated through nature-inspired art like Paitkar painting, Tussar silk, and rituals honoring flora and fauna, with festivals like Karam, Sohrai, and Chhau dance showcasing deep connection to the land. </p>
+    </div>
+</div>
+
+</body>
+</html>

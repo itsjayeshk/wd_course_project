@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>South India States</title>
+    <style>
+        body { font-family: Arial; background: #f4f4f4; margin: 0; }
+        header { background: #138808; color: white; padding: 20px; text-align: center; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 { padding: 10px; }
+        /* ---------- GLOBAL POLISH ---------- */
+body {
+    background: linear-gradient(180deg, #f6f8f6, #e6efe6);
+}
+
+/* ---------- HEADER ---------- */
+header {
+    font-size: 34px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* ---------- GRID ---------- */
+.grid {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- CARD UPGRADE ---------- */
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Hover lift */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+}
+
+/* ---------- IMAGE EFFECT ---------- */
+.card img {
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+/* ---------- TEXT ---------- */
+.card h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 12px 0 6px;
+    color: #0b6e2f;
+}
+
+.card p {
+    padding: 0 18px 20px;
+    font-size: 14.8px;
+    line-height: 1.7;
+    color: #444;
+    text-align: justify;
+}
+
+/* ---------- ACCENT BAR ---------- */
+.card::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #138808, #2e7d32);
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s ease;
+}
+
+.card:hover::before {
+    width: 100%;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    header {
+        font-size: 26px;
+        padding: 15px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+<header>States of South India</header>
+
+<div class="grid">
+    <div class="card"><img src="https://cdn.slidesharecdn.com/ss_thumbnails/tamilnaducultureforkids-170218113912-thumbnail.jpg?width=640&height=640&fit=bounds">
+        <h3>Tamil Nadu</h3>
+        <p>Tamil Nadu's culture is a vibrant blend of ancient Dravidian traditions, famous for its magnificent temple architecture (like Mahabalipuram), classical dance (Bharatanatyam), rich literature (Tirukkural), world-renowned silk sarees, distinct cuisine, and deep-rooted values emphasizing honor, modesty, and gratitude, all expressed through its classical Tamil language.</p>
+    </div>
+    <div class="card"><img src="https://www.ekeralatourism.net/wp-content/uploads/2018/12/culture-of-kerla.jpg">
+        <h3>Kerala</h3>
+         <p>Kerala culture is a vibrant blend of tradition and modernity, known for its rich heritage in classical arts like Kathakali, grand festivals such as Onam, unique cuisine rich in spices and coconut, strong emphasis on Ayurveda and wellness, and harmonious coexistence of religions. It's characterized by elegant simplicity, high literacy, and a deep connection to nature, earning it the nickname "God's Own Country".</p>      
+    </div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5H1ExrcOVSKHgar7aw3jyTfHLO9thUQznUQ&s">
+        <h3>Karnataka</h3>
+        <p>Karnataka's culture is a rich blend of ancient traditions, vibrant arts like Yakshagana, diverse cuisines (Udupi, Bisi Bele Bath), colorful festivals (Mysuru Dasara, Ugadi), and distinct textiles (Mysore Silk), reflecting influences from various dynasties and languages, especially Kannada.</p>
+    </div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8mJUr9zOdwf3l9yUSGf7FI_FXDzFUTQHj7w&s">
+        <h3>Andhra Pradesh</h3>
+        <p>Andhra Pradesh culture is a vibrant mix of Dravidian traditions, Telugu language, and influences from various dynasties, known for the classical dance Kuchipudi, spicy cuisine, intricate Kalamkari textiles, and vibrant festivals like Ugadi and Sankranti, all shaped by its rich history and spiritual significance</p>
+    </div>   
+    <div class="card"><img src="https://static.tripzilla.in/media/125700/conversions/01J6V8QCWTPHZ7VVKBEN064ZCW-w1024.webp">
+        <h3>Telangana</h3>
+        <p>Telangana's culture is a vibrant mix of South Indian traditions and Persian influences, known for its unique festivals like Bathukamma and Bonalu, rich handloom textiles such as Pochampally Ikat, distinctive cuisine with dishes like jonna rotte, folk dances, and a blend of Telugu and Urdu languages, reflecting its diverse history under various dynasties. </p>
+    </div>
+</div>
+
+</body>
+</html>

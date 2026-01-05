@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>West India States</title>
+    <style>
+        body { font-family: Arial; background: #f4f4f4; margin: 0; }
+        header { background: #ff5722; color: white; padding: 20px; text-align: center; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 { padding: 10px; }
+        /* ---------- GLOBAL POLISH ---------- */
+body {
+    background: linear-gradient(180deg, #fff5f0, #f3e6df);
+}
+
+/* ---------- HEADER ---------- */
+header {
+    font-size: 34px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* ---------- GRID ---------- */
+.grid {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- CARD UPGRADE ---------- */
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Hover lift */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.28);
+}
+
+/* ---------- IMAGE EFFECT ---------- */
+.card img {
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+/* ---------- TEXT ---------- */
+.card h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 12px 0 6px;
+    color: #e64a19;
+}
+
+.card p {
+    padding: 0 18px 20px;
+    font-size: 14.8px;
+    line-height: 1.7;
+    color: #444;
+    text-align: justify;
+}
+
+/* ---------- ACCENT STRIP ---------- */
+.card::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #ff5722, #e64a19);
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s ease;
+}
+
+.card:hover::before {
+    width: 100%;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    header {
+        font-size: 26px;
+        padding: 15px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+<header>States of West India</header>
+
+<div class="grid">
+    <div class="card"><img src="https://www.ritiriwaz.com/wp-content/uploads/2018/05/Maharashtra-culture.jpg">
+        <h3>Maharashtra</h3>
+        <p>Maharashtra's culture is a vibrant mix of tradition and modernity, known for grand festivals like Ganesh Chaturthi, rich history from the Maratha Empire, diverse regional cuisines, folk arts like Lavani dance, and a strong emphasis on education and progress, blending spiritual heritage with contemporary growth.</p>
+    </div>
+    <div class="card"><img src="https://www.ritiriwaz.com/wp-content/uploads/2018/05/Gujarat-Culture.jpg">
+        <h3>Gujarat</h3>
+        <p>Gujarat's culture is a vibrant blend of deep-rooted traditions and modernity, characterized by colorful festivals like Navratri with its famous Garba dance, rich handicrafts (Bandhani, Patola), diverse religious influences (Hinduism, Islam, Jainism), unique cuisine, and a spirit of enterprise and hospitality, all while preserving ancient customs and artistic expressions.</p>    
+    </div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ5F4oiYX1fnuiCd-NMERBGYUpD6KyrE6yVQ&s">
+        <h3>Rajasthan</h3>
+        <p>Rajasthan's culture is a vibrant tapestry of royal heritage, reflected in its majestic forts, colorful textiles, and rich folk music and dance (like Ghoomar and Kalbeliya). It's a land of warm hospitality, intricate handicrafts, and a deep sense of tradition, showcased through unique crafts, colorful festivals, and delicious cuisine, embodying the spirit of "Padharo Mhare Desh" (Welcome to my land).</p>
+    </div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPcpm8OQ-8ap9ddRYLwiR4VuuVast7l4BLwQ&s">
+        <h3>Goa</h3>
+        <p>Goan culture is a vibrant fusion of Indian and Portuguese influences, seen in its unique Indo-Latin festivals, Baroque architecture, Konkani language, and cuisine blending spices with seafood. It's known for its laid-back, fun-loving lifestyle, with music, dance (like Fugdi), and colourful traditions coexisting harmoniously with strong Indian roots, creating a distinct East-meets-West identity.</p>     
+    </div>
+</div>
+
+</body>
+</html>
